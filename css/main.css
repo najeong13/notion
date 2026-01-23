@@ -1,8 +1,6 @@
 /* 1. 위젯들을 감싸는 전체 컨테이너 */
-#cal-body{
-    background-color: #e5f2fc;
-}
 #calandar{
+    margin-top: 30px;
     display: flex;
     background-color: transparent;
     justify-content: center;
