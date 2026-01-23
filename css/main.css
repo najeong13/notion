@@ -53,7 +53,7 @@
     /* 박스 안쪽 여백 */
     border-radius: 10px;
     /* 둥근 캡슐 모양 */
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
 }
@@ -62,4 +62,5 @@
     display: flex;
     justify-content: center;
     /* align-items: center; */
+
 }
