@@ -1,50 +1,64 @@
-/* 1. 위젯들을 감싸는 전체 컨테이너 */
-#calandar{
-    margin-top: 30px;
-    display: flex;
-    background-color: transparent;
-    justify-content: center;
-    align-items: center;
-    /* 화면 중앙 정렬 (필요시 제거 가능) */
-    font-family: 'Pretendard', -apple-system, sans-serif;
-}
-.widget-container {
-    display: flex;
-    /* 가로로 나란히 배치 */
-    gap: 10px;
-    /* 위젯 사이의 간격 */
-    justify-content: center;
-    align-items: center;
-}
+/* 1. 전체 위젯을 감싸는 컨테이너 */
+        .full-widget-wrapper {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            /* 상단(월일)과 하단(요일) 사이 간격 */
+            font-family: 'Pretendard', -apple-system, sans-serif;
+            background: transparent;
+        }
 
-/* 위젯 공통 디자인 */
-.mini-widget {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70px;
-    height: 70px;
-    background: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.06);
-    border: 1px solid #f0f0f0;
-}
+        /* 2. 상단 월/일 배치용 컨테이너 */
+        .top-row {
+            display: flex;
+            gap: 10px;
+        }
 
-.display-group {
-    display: flex;
-    align-items: baseline;
-    color: #333;
-}
+        /* 공통 위젯 스타일 */
+        .mini-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.06);
+            /* border: 1px solid #ffffff; */
 
-.num-text {
-    font-size: 1.6rem;
-    font-weight: 900;
-    line-height: 1;
-}
+        }
 
-.unit-text {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-left: 4px;
-    color: #333;
-}
+        .num-text {
+            font-size: 1.6rem;
+            font-weight: 900;
+            line-height: 1;
+            color: #333;
+        }
+
+        .unit-text {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-left: 2px;
+            color: #333;
+        }
+
+        /* 3. 하단 요일 박스 스타일 */
+        .day-box {
+            background: #ffffff;
+            /* 요일 박스 배경색 */
+            /* color: white; */
+            /* 요일 글자색 */
+            padding: 8px 51px;
+            /* 박스 안쪽 여백 */
+            border-radius: 10px;
+            /* 둥근 캡슐 모양 */
+            font-size: 1.2rem;
+            font-weight: 600;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+        }
+        #wid-calendar{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }

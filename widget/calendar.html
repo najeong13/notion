@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노션 꾸미기</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Sunflower:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+</head>
+
+<body style="background-color: #e5f2fc;">
+    <section id="wid-calendar">
+        <div class="full-widget-wrapper">
+            <div class="top-row">
+                <div class="mini-box">
+                    <span id="month-val" class="num-text">--</span>
+                    <span class="unit-text">월</span>
+                </div>
+                <div class="mini-box">
+                    <span id="date-val" class="num-text">--</span>
+                    <span class="unit-text">일</span>
+                </div>
+            </div>
+
+            <div id="day-of-week" class="day-box">요일</div>
+        </div>
+
+        <script>
+            function updateFullWidget() {
+                const now = new Date();
+
+                // 월, 일 업데이트
+                document.getElementById('month-val').innerText = now.getMonth() + 1;
+                document.getElementById('date-val').innerText = now.getDate();
+
+                // 요일 업데이트 (배열 사용)
+                const weekDays = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
+                const dayName = weekDays[now.getDay()];
+
+                document.getElementById('day-of-week').innerText = dayName;
+            }
+
+            // 페이지 로드 시 즉시 실행
+            updateFullWidget();
+        </script>
+    </section>
+</body>
+
+</html>
