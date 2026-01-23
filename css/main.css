@@ -5,9 +5,7 @@
     gap: 10px;
     /* 위젯 사이의 간격 */
     justify-content: center;
-    /* 화면 중앙 정렬 (필요시 제거 가능) */
-    font-family: 'Pretendard', -apple-system, sans-serif;
-    background: transparent;
+    align-items: center;
 }
 
 /* 위젯 공통 디자인 */
@@ -40,4 +38,14 @@
     font-weight: 700;
     margin-left: 4px;
     color: #333;
+}
+#calandar{
+    display: flex;
+    width: 200px;
+    height: 130px;
+    background-color: #e5f2fc;
+    justify-content: center;
+    align-items: center;
+    /* 화면 중앙 정렬 (필요시 제거 가능) */
+    font-family: 'Pretendard', -apple-system, sans-serif;
 }
