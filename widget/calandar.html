@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노션 꾸미기</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Sunflower:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <header id="calandar">
+        <div class="widget-container">
+            <div class="mini-widget">
+                <div class="display-group">
+                    <span id="month-val" class="num-text">--</span>
+                    <span class="unit-text">월</span>
+                </div>
+            </div>
+
+            <div class="mini-widget">
+                <div class="display-group">
+                    <span id="date-val" class="num-text">--</span>
+                    <span class="unit-text">일</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function updateWidgets() {
+            const now = new Date();
+
+            // 월 데이터 (0~11 이므로 +1)
+            const month = now.getMonth() + 1;
+            // 일 데이터
+            const date = now.getDate();
+
+            document.getElementById('month-val').innerText = month;
+            document.getElementById('date-val').innerText = date;
+        }
+
+        // 실행
+        updateWidgets();
+    </script>
+</body>
+
+</html>

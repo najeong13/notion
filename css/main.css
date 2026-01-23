@@ -1,0 +1,45 @@
+
+ 
+ /* 1. 위젯들을 감싸는 전체 컨테이너 */
+ .widget-container {
+     display: flex;
+     /* 가로로 나란히 배치 */
+     gap: 10px;
+     /* 위젯 사이의 간격 */
+     justify-content: center;
+     /* 화면 중앙 정렬 (필요시 제거 가능) */
+     font-family: 'Pretendard', -apple-system, sans-serif;
+     background: transparent;
+ }
+
+ /* 위젯 공통 디자인 */
+ .mini-widget {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 120px;
+     height: 120px;
+     background: #ffffff;
+     border-radius: 10px;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.06);
+     border: 1px solid #f0f0f0;
+ }
+
+ .display-group {
+     display: flex;
+     align-items: baseline;
+     color: #333;
+ }
+
+ .num-text {
+     font-size: 2.5rem;
+     font-weight: 900;
+     line-height: 1;
+ }
+
+ .unit-text {
+     font-size: 1.4rem;
+     font-weight: 700;
+     margin-left: 4px;
+     color: #333;
+ }
