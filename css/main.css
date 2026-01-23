@@ -1,4 +1,14 @@
 /* 1. 위젯들을 감싸는 전체 컨테이너 */
+#calandar{
+    display: flex;
+    width: 200px;
+    height: 130px;
+    background-color: #e5f2fc;
+    justify-content: center;
+    align-items: center;
+    /* 화면 중앙 정렬 (필요시 제거 가능) */
+    font-family: 'Pretendard', -apple-system, sans-serif;
+}
 .widget-container {
     display: flex;
     /* 가로로 나란히 배치 */
@@ -38,14 +48,4 @@
     font-weight: 700;
     margin-left: 4px;
     color: #333;
-}
-#calandar{
-    display: flex;
-    width: 200px;
-    height: 130px;
-    background-color: #e5f2fc;
-    justify-content: center;
-    align-items: center;
-    /* 화면 중앙 정렬 (필요시 제거 가능) */
-    font-family: 'Pretendard', -apple-system, sans-serif;
 }
