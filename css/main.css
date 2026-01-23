@@ -20,8 +20,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.06);
@@ -30,14 +30,14 @@
 }
 
 .num-text {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 900;
     line-height: 1;
     color: #333;
 }
 
 .unit-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     margin-left: 2px;
     color: #333;
@@ -49,7 +49,7 @@
     /* 요일 박스 배경색 */
     /* color: white; */
     /* 요일 글자색 */
-    padding: 8px 51px;
+    padding: 8px 42px;
     /* 박스 안쪽 여백 */
     border-radius: 10px;
     /* 둥근 캡슐 모양 */
@@ -64,3 +64,4 @@
     /* align-items: center; */
 
 }
+
